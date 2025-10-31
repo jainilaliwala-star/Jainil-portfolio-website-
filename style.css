@@ -1,0 +1,131 @@
+/* 🌈 Vibrant Gradient Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #6a11cb, #2575fc, #ff6a00);
+  background-size: 400% 400%;
+  animation: gradientMove 10s infinite alternate;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Header Navigation */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ffce00;
+}
+
+/* Section Layout */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 2.8em;
+}
+
+.content h1 span {
+  color: #ffce00;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ffce00;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+/* Projects */
+.project-section .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Contact */
+.contact-section .email-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-section .email-link:hover {
+  background: #ffce00;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
