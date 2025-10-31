@@ -1,0 +1,141 @@
+/* 🌈 Animated gradient background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #ffdf6c;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ffdf6c;
+}
+
+/* Section styles */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Home */
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 2.8em;
+}
+
+.content h1 span {
+  color: #ffdf6c;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #e3e3e3;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #ffdf6c;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Contact */
+.contact-section .email-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #fff;
+  color: #000;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-section .email-link:hover {
+  background: #ffdf6c;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  font-size: 0.9em;
+}
